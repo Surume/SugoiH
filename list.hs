@@ -5,3 +5,5 @@ moji_renketsu2 = ['w','o'] ++ ['o','t']
 a_small_cat = 'A':" SMALL CAT"
 cons_int = 5:[1,2,3,4,5]
 addListEnd = [1,2,3,4]++[5]
+extI = "Surume Ika" !! 7
+extDouble = [1.2, 2.3, 33.4, 44.45, 5.678] !! 3
