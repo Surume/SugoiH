@@ -14,7 +14,7 @@
 -- factorial 0 = 1
 -- factorial n = n * factorial (n - 1)
 
-charName :: Char -> String
-charName 'a' = "Albert"
-charName 'b' = "Brosepth"
-charName 'c' = "Cecil"
+-- charName :: Char -> String
+-- charName 'a' = "Albert"
+-- charName 'b' = "Brosepth"
+-- charName 'c' = "Cecil"
