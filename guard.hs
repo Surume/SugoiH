@@ -5,9 +5,7 @@ bmiTell weight height
     | bmi <= fat = "Youre fat!"
     | otherwise   = "Youre a whale congratulations"
     where bmi = weight / height ^ 2
-          skinny = 18.5
-          normal = 25.0
-          fat = 30.0
+          (skinny, normal, fat) = (18.5, 25.0, 30.0)
 
 max' :: (Ord a) => a -> a -> a
 max' a b
