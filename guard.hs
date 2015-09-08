@@ -1,9 +1,13 @@
 bmiTell :: Double -> Double -> String
 bmiTell weight height
-    | weight / height ^ 2 <= 18.5 = "Youre underweight, you emo, you!"
-    | weight / height ^ 2 <= 25.0 = "Youre supporsedly nomal"
-    | weight / height ^ 2 <= 30.0 = "Youre fat!"
+    | bmi <= skinny = "Youre underweight, you emo, you!"
+    | bmi <= normal = "Youre supporsedly nomal"
+    | bmi <= fat = "Youre fat!"
     | otherwise   = "Youre a whale congratulations"
+    where bmi = weight / height ^ 2
+          skinny = 18.5
+          normal = 25.0
+          fat = 30.0
 
 max' :: (Ord a) => a -> a -> a
 max' a b
